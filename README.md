@@ -13,13 +13,14 @@ Better than sharing bookmarks via files, in confluence or somewhere else.
 
 ## Preview
 
+> [!info]
+> Get a [live preview](https://htmlpreview.github.io/?https://github.com/petpen/project-bookmarks/blob/main/public/index.html)
+
 ![Preview](img/preview.jpg "New Tab Preview")
 
 ## Usage as Bookmark Page
 
-The page is created by Gitlab / GitHub Pages and available at:
-
-```link to rendered page```
+The page can be created by Gitlab / GitHub Pages and is then available. See `.gitlab-ci.yml`
 
 ## Usage in Browser as New Tab Extension (optional)
 

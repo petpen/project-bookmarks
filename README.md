@@ -36,12 +36,13 @@ The page can be created by Gitlab / GitHub Pages and is then available. See `.gi
 
 Adopting the *sections* and *links* can be done in the file [config.json](public/config.json).
 
-| Field         | Purpose                                                                      |
-|:--------------|:-----------------------------------------------------------------------------|
-| title         | Title of the New Tab page                                                    |
-| defaults      | The defaults for sections and links if no value is given for the fields.     |
-| fg            | Foreground color for links                                                   |
-| bg            | Background color for links                                                   |
+| Field    | Purpose                                                                  |
+|:---------|:-------------------------------------------------------------------------|
+| title    | Title of the New Tab page                                                |
+| defaults | The defaults for sections and links if no value is given for the fields. |
+| fg       | Foreground color for links                                               |
+| bg       | Background color for links                                               |
+| tooltip  | Optional tooptip that will be shown                                      |
 
 Adding `{}` as a link element in a section will force a new line for the upcoming links.
 

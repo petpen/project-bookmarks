@@ -1,0 +1,50 @@
+{
+  "title": "YCP // Your Cool Project",
+  "defaults": {
+    "section":{
+      "title": "Other"
+    },
+    "link": {
+      "text": "Link",
+      "fg": "ffffff",
+      "bg": "778DA9",
+      "href": "#"
+    }
+  },
+  "sections": [
+    {
+      "title": "General",
+      "links": [
+        {"text": "Sprint Board",       "bg": "0747a6", "fg": "ffffff", "href": "#", "tooltip": "Jira Sprint Board"},
+        {"text": "Preparation Board",  "bg": "0747a6", "fg": "ffffff", "href": "#", "tooltip": "Jira Sprint Board"},
+        {"text": "Team Board",         "bg": "ffdd33", "fg": "000000", "href": "#", "tooltip": "Miro Board"}
+      ]
+    },
+    {
+      "title": "Documentation",
+      "links": [
+        {"text": "Confluence",    "bg": "4083F6", "fg": "ffffff", "href": "#"},
+        {"text": "DoR, DoD, DoC", "bg": "9cc0fc", "fg": "333333", "href": "#"},
+        {"text": "Branching",     "bg": "9cc0fc", "fg": "333333", "href": "#"},
+        {"text": "Gitmoji",       "bg": "ffdd67", "fg": "000000", "href": "https://gitmoji.dev/", "tooltip": "😜"}
+      ]
+    },
+    {
+      "title": "Developer Tools",
+      "links": [
+        {"text": "Repositories",  "bg": "24292f", "fg": "ffffff", "href": "#"},
+        {"text": "AWS",           "bg": "ff9900", "fg": "000716", "href": "#", "tooltip": "Access to AWS Console for each Environment"},
+        {"text": "Logging",       "bg": "76BD68", "fg": "ffffff", "href": "#", "tooltip": "Access to Logs and Dashboards"},
+        {"text": "MongoDB",       "bg": "001e2b", "fg": "00ed64", "href": "#", "tooltip": "MongoDB Cluster Management"}
+      ]
+    },
+    {
+      "title": "Support",
+      "links": [
+        {"text": "Tasks",          "bg": "4083F6", "fg": "ffffff", "href": "#"},
+        {"text": "Ticket System",  "bg": "4083F6", "fg": "ffffff", "href": "#"},
+        {"text": "UI Prod",        "bg": "ef3b08", "fg": "ffffff", "href": "#"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+:root {
+    --bg-color: #EEEFF2;
+    --header-bg: #EEEFF2;
+    --text-color: #010205;
+    --main-title-color: #010205;
+    --title-color: #2D3748;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --border-color: #E2E8F0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1A202C;
+    --header-bg: #1A202C;
+    --text-color: #E2E8F0;
+    --main-title-color: #E2E8F0;
+    --title-color: #A0AEC0;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --border-color: #4A5568;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, 'Heiti SC', SimHei, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header / Menu Bar */
+.header {
+    width: 100%;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.header-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-title-color);
+}
+
+/* Theme Switcher */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.theme-switch-wrapper .icon {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-btn {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px var(--shadow-color);
+    transition: background-color 0.2s ease-in-out;
+    gap: 0.5rem;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--border-color);
+}
+
+.theme-toggle-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .sun-icon,
+[data-theme="light"] .moon-icon {
+    display: inline-block;
+}
+
+[data-theme="light"] .sun-icon,
+[data-theme="dark"] .moon-icon {
+    display: none;
+}
+
+
+/* Main Content Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Links Container */
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Spacing between items */
+}
+
+/* Link Item Styling */
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+    word-break: break-word;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid var(--border-color);
+}
+
+.link-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+[data-theme="dark"] .link-item,
+[data-theme="dark"] .link-item:hover {
+    box-shadow: none;
+}
+
+/* Break element for forcing a new line in flexbox */
+.line-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* Error Message Styling */
+.error-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFF5F5;
+    color: #C53030;
+    border: 1px solid #FC8181;
+    border-radius: var(--border-radius);
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: fixed;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    max-width: 250px;
+    word-wrap: break-word;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+[data-theme="dark"] .tooltip {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}

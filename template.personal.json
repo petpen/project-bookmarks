@@ -1,0 +1,12 @@
+{
+  "position": "bottom",
+  "sections": [
+    {
+      "title": "Other",
+      "links": [
+        {"text": "heise online", "bg": "ffffff", "fg": "323232", "href": "https://www.heise.de/newsticker"},
+        {"text": "Golem",        "bg": "000000", "fg": "ffffff", "href": "https://www.golem.de/news"}
+      ]
+    }
+  ]
+}

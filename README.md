@@ -13,7 +13,7 @@ Better than sharing bookmarks via files, in confluence or somewhere else.
 
 ## Preview
 
-> [!info]
+> [!TIP]
 > Get a [live preview](https://htmlpreview.github.io/?https://github.com/petpen/project-bookmarks/blob/main/public/index.html)
 
 ![Preview](img/preview.jpg "New Tab Preview")
